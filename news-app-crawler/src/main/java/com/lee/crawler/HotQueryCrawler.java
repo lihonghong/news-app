@@ -29,7 +29,7 @@ public class HotQueryCrawler {
 
   public static void main(String[] args) {
     HotQueryCrawler hotQueryCrawler = new HotQueryCrawler();
-    List<HotQuery> list = hotQueryCrawler.crawlShenMaJson();
+    List<HotQuery> list = hotQueryCrawler.getAllHotQuery();
     for (HotQuery hotQuery : list) {
       LOGGER.info(hotQuery.toString());
     }

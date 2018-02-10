@@ -1,0 +1,15 @@
+.classpath
+.settings/
+.project
+target/
+*.log
+*.tar.gz
+release/
+.idea/
+*.iml
+junit-report
+.DS_Store
+coverage-report/
+*.pyc
+*.pyo
+.idea/*
