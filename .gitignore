@@ -220,3 +220,17 @@ classes/
 **/*.iml
 *.iml
 *.iws
+
+# Maven
+target/
+release/
+*/dependency-reduced-pom.xml
+/tree
+
+# VIM
+*.swp
+*.swo
+
+node_modules/
+metro-cache-b8e7e597f0b7522ef1338dd7676ca4e271fb0376
+haste-map-metro-2-53e3ca42265735d7f9a1bcea0a713886
