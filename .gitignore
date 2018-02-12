@@ -220,6 +220,7 @@ classes/
 **/*.iml
 *.iml
 *.iws
+**/*.jar
 
 # Maven
 target/

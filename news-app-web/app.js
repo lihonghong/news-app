@@ -8,16 +8,6 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var partials = require('express-partials');
 
-mysql = require('mysql');
-conn = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'news_app',
-    port: 3306
-});
-conn.connect();
-
 var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
