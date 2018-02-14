@@ -3,9 +3,9 @@ var router = express.Router();
 var database = require(__dirname + "/database");
 
 router.get('/', function (req, res) {
-    var connection = database.getConnection();
+    var query = database.query;
 
-    connection.query('select * from news_hotquery where TO_DAYS(create_time) = TO_DAYS(NOW()) order by position', function (error, rows) {
+    query('select * from news_hotquery where TO_DAYS(create_time) = TO_DAYS(NOW()) order by position', null, function (error, rows) {
         var data = [];
         for (var i = 0; i < rows.length; i++) {
             data.push({
