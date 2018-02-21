@@ -17,7 +17,7 @@ export default class App extends Component {
     }
 
     componentDidMount() {
-        return fetch('http://hotquery.lbsso.com/')
+        return fetch('http://hotquery.lbsso.com/') // 获取热词列表
             .then((response) => response.json())
             .then((responseJson) => {
                 let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
@@ -50,7 +50,7 @@ export default class App extends Component {
                     renderRow={(rowData) =>
                         <Text onPress={
                             () => {
-                                Linking.openURL('https://www.baidu.com/s?wd=' + rowData.name)
+                                Linking.openURL('https://www.baidu.com/s?wd=' + rowData.name) // 跳转到百度搜索此热词
                             }}>{rowData.name}
                         </Text>}
                 />

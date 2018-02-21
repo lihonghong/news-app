@@ -1,2 +1,2 @@
 ### 运行
-npm start
+node app.js
