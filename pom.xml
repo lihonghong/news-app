@@ -11,5 +11,6 @@
 
     <modules>
         <module>news-app-crawler</module>
+        <module>news-app-data</module>
     </modules>
 </project>
