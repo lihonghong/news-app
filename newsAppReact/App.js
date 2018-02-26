@@ -48,7 +48,7 @@ export default class App extends Component {
                 <ListView
                     dataSource={this.state.dataSource}
                     renderRow={(rowData) =>
-                        <Text onPress={
+                        <Text style={styles.title} onPress={
                             () => {
                                 Linking.openURL('https://www.baidu.com/s?wd=' + rowData.name) // 跳转到百度搜索此热词
                             }}>{rowData.name}
@@ -62,8 +62,11 @@ export default class App extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
         backgroundColor: '#F5FCFF',
+    },
+    title:{
+        color:"black",
+        fontSize:20,
+        padding: 10,
     }
 });
